@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # IIH AI Demonstrator\
+\
+## Status\
+\
+Demonstration prototype only.\
+\
+- Synthetic data only\
+- Not validated for clinical use\
+- No autonomous diagnosis\
+- No autonomous treatment recommendation\
+- No autonomous admission, discharge, or transfer decision\
+- Human clinician retains responsibility for all clinical decisions\
+\
+## Purpose\
+\
+This Streamlit application demonstrates a deterministic, clinician-in-the-loop\
+workflow for adult presentations with confirmed, uncertain, or non-confirmed\
+papilloedema / possible idiopathic intracranial hypertension (IIH).\
+\
+The system separates:\
+\
+1. Structured intake\
+2. Validation of required workflow data\
+3. Deterministic rule-engine evaluation\
+4. Clinician review, sign-off, and override\
+\
+## Included demonstrations\
+\
+- Potential visual threat escalation\
+- Hypertensive emergency flag\
+- CVST / secondary venous pathway\
+- Missing venography hard stop\
+- Typical and atypical IIH candidate states\
+- Abnormal CSF pathway\
+- Pseudopapilloedema follow-up safeguards\
+- NOPH contact de-duplication and recontact triggers\
+\
+## Safety boundary\
+\
+The application is an educational workflow demonstrator. It must not be used\
+with real patient data or as a substitute for clinical assessment, local policy,\
+specialist advice, diagnostic imaging interpretation, or clinical governance.\
+\
+## Run locally\
+\
+```bash\
+python3 -m venv .venv\
+source .venv/bin/activate\
+pip install -r requirements.txt\
+streamlit run app.py\
+```}
